@@ -1,0 +1,5 @@
+<%= form_with model: @gossip do |form| %>
+  <%= form.label "Content" %><br>
+  <%= form.text_field :content, placeholder: "content" %>
+  <%= form.submit %>
+<% end %>

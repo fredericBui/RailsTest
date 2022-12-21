@@ -1,0 +1,8 @@
+<h1>Gossips#show</h1>
+<p><%= @gossip.content %></p>
+<%= link_to "Edit", edit_gossip_path(@gossip) %>
+<%= link_to "Destroy", gossip_path(@gossip), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %>
+

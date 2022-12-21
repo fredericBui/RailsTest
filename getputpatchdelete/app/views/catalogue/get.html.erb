@@ -1,0 +1,19 @@
+Hello world
+
+<%= link_to "Create", '/cat', 
+data: {
+turbo_method: :post,
+turbo_confirm: "Are you sure?"
+} %>
+
+<%= link_to "Edit", '/cat', 
+data: {
+turbo_method: :put,
+turbo_confirm: "Are you sure?"
+} %>
+
+<%= link_to "Destroy", '/cat', 
+data: {
+turbo_method: :delete,
+turbo_confirm: "Are you sure?"
+} %>

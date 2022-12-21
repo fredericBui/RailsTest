@@ -1,0 +1,10 @@
+<h1>Gossips#index</h1>
+<ul>
+  <% @gossips.each do |gossip| %>
+    <li>
+      <%= gossip.content %>
+      <%= link_to "Show", gossip %>
+    </li>
+  <% end %>
+  <%= link_to "New Gossip", new_gossip_path %>
+</ul>
